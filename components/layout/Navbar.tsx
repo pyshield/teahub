@@ -25,23 +25,23 @@ export const Navbar: React.FC = () => {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            <Link to="/creator" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">
+            <Link to="/explore" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">
               Explore Creators
             </Link>
-            <Link to="/creator" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">
+            <Link to="/explore" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">
               Features
             </Link>
-            <Link to="/creator" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">
+            <Link to="/explore" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">
               Pricing
             </Link>
           </div>
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center gap-4">
-            <Link to="/dashboard">
+            <Link to="/login">
                 <span className="text-sm font-medium text-slate-600 hover:text-slate-900 cursor-pointer">Log in</span>
             </Link>
-            <Link to="/dashboard">
+            <Link to="/register">
                 <Button size="sm">Start my Page</Button>
             </Link>
           </div>
@@ -61,24 +61,24 @@ export const Navbar: React.FC = () => {
         <div className="md:hidden border-t border-slate-100 bg-white">
           <div className="px-4 pt-2 pb-6 space-y-1">
             <Link 
-              to="/creator" 
+              to="/explore" 
               className="block px-3 py-2 text-base font-medium text-slate-600 hover:text-indigo-600 hover:bg-slate-50 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
               Explore Creators
             </Link>
             <Link 
-              to="/dashboard" 
+              to="/login" 
               className="block px-3 py-2 text-base font-medium text-slate-600 hover:text-indigo-600 hover:bg-slate-50 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
-              Dashboard
+              Log in
             </Link>
             <div className="pt-4 flex flex-col gap-2">
-               <Link to="/dashboard" onClick={() => setIsMenuOpen(false)}>
+               <Link to="/login" onClick={() => setIsMenuOpen(false)}>
                    <Button fullWidth variant="outline">Log in</Button>
                </Link>
-               <Link to="/dashboard" onClick={() => setIsMenuOpen(false)}>
+               <Link to="/register" onClick={() => setIsMenuOpen(false)}>
                   <Button fullWidth>Start my Page</Button>
                </Link>
             </div>

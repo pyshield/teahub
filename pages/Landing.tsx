@@ -24,12 +24,12 @@ export const Landing: React.FC = () => {
               The all-in-one platform for artists, streamers, and developers.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to="/creator">
+              <Link to="/explore">
                  <Button size="lg" className="h-12 px-8 rounded-full text-lg shadow-lg shadow-indigo-200">
-                    View Demo Creator
+                    Discover Creators
                  </Button>
               </Link>
-              <Link to="/dashboard">
+              <Link to="/register">
                 <Button size="lg" variant="outline" className="h-12 px-8 rounded-full text-lg">
                     Start my Page
                 </Button>
@@ -100,7 +100,7 @@ export const Landing: React.FC = () => {
           <div className="max-w-4xl mx-auto px-4">
              <h2 className="text-4xl font-bold mb-6">Ready to start earning?</h2>
              <p className="text-slate-300 text-lg mb-10">Join thousands of creators who trust TeaHub to power their creative business.</p>
-             <Link to="/dashboard">
+             <Link to="/register">
                 <Button size="lg" className="bg-white text-slate-900 hover:bg-slate-100 border-none">
                     Create my Page
                     <ArrowRight size={18} className="ml-2" />
